@@ -19,7 +19,7 @@ const heroes = [
 const main = document.querySelector("main");
 const search = document.querySelector('#search');
 
-function render(data = heroes)
+function render(data = heroes){
 const heroesString = data
   .map(function (hero) {
     return `
@@ -43,6 +43,7 @@ const heroesString = data
   .join("");
 
 main.innerHTML = heroesString;
+}
 
 function filterHeroes(){
   const newHeroesList = heroes.filter((hero) => 
